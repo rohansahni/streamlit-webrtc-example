@@ -18,6 +18,7 @@ def get_ice_servers():
 
     # Ref: https://www.twilio.com/docs/stun-turn/api
     try:
+        logger.warning(" # "*10+os.environ["TWILIO_ACCOUNT_SID"]+" # "*10)
         account_sid = os.environ["TWILIO_ACCOUNT_SID"]
         auth_token = os.environ["TWILIO_AUTH_TOKEN"]
         
